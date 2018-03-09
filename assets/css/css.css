@@ -1,3 +1,20 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(https://mizore.tk/asset/fonts/ZKwULyCG95tk6mOqHQfRBCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(https://mizore.tk/assets/fonts/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
 .imgborder {
   border-radius: 10px;
   border-style: solid;
@@ -17,7 +34,6 @@
 	border-radius: 256px;
 	-webkit-border-radius: 256px;
 	-moz-border-radius: 256px;
-	background: url("../images/tatsuavatar.png") no-repeat;
 	margin: 10px;
     border:4px solid #b05dec;
 	background-position: center;
@@ -51,78 +67,6 @@
     -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
   }
-
-.circularfalzar {
-    background: url("../images/avatars/falzar.jpg") no-repeat;
-    background-size: 64px 64px;
-    background-position: center;
-}
-
-.circulardavid {
-	background: url("../images/avatars/david.jpg") no-repeat;
-    background-size: 64px 64px;
-    background-position: center;
-	}
-
-.circularbrussell {
-	background: url("../images/avatars/brussell.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularrei {
-	background: url("../images/avatars/rei.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularpisang {
-	background: url("../images/avatars/pisang.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularpyraxo {
-	background: url("../images/avatars/pyraxo.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularalex {
-	background: url("../images/avatars/alex.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularvape {
-	background: url("../images/avatars/vape.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularstevy {
-	background: url("../images/avatars/stevy.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularfewshin {
-	background: url("../images/avatars/fewshin.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularlion {
-	background: url("../images/avatars/lion.jpg") no-repeat;
-    background-size: 64px 64px;
-	background-position: center;
-	}
-
-.circularcookie {
-    background: url("../images/avatars/cookie.jpg") no-repeat;
-    background-size: 64px 64px;
-  	background-position: center;
-}
 
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
