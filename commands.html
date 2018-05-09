@@ -1,267 +1,515 @@
-<!DOCTYPE html>
-<html style="cursor: url(../img/cursor.png), auto"; lang="en">
-    <head>
-        <!-- SANTA IS REAL!!! (┛◉Д◉)┛彡┻━┻  -->
-        <script type="text/javascript" src="assets/js/snowstorm.assets/js"></script>
-        <!-- SANTA IS REAL!!! (┛◉Д◉)┛彡┻━┻  -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="A discord-bot handled and maintained by OblivionSan">
-        <meta name="keywords" content="mizore, mizore.tk, mizore chan, mizore-chan">
-        <meta name="theme-color" content="#b05dec">
-        <meta property="og:image" content="https://mizore.tk/assets/img/mizo.png"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://mizore.tk"/>
-        <meta property="og:title" content="Mizore.tk"/>
-        <meta property="og:description" content="A discord-bot handled and maintained by OblivionSan"/>
-        <link rel="icon" href="assets/img/mizo.png"
-            type="image/x-icon" />
-        <link rel="shortcut icon" href="assets/img/mizo.png"
-            type="image/x-icon" />
-        <title>Mizore-Chan | Home</title>
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/css.css">
-    </head>
-    <body id="top">
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-static-top animated fadeInDown" role="navigation">
-            <div class="container" style="margin-top: 5px;">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./"><b>Mizore-Chan | みぞれ</b></a>
-                    <a href="https://discord.oblivionsan.tk/" class="btn btn-default btn-invite" target="_blank" style="margin: 8px; float: right;">
-                    <b style="color: #4c4c4c;">Support Server</b>
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="float: right;">
-                    <ul class="nav navbar-nav" style="font-size: 14px;">
-                        <li>
-                            <a href="./">
-                            <i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                        </li>
-                        <li>
-                            <a href="./about">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
-                        </li>
-                        <li>
-                            <a href="./status">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i> Status</a>
-                        </li>
-                        <li>
-                            <a href="https://feedback.mizore.tk" target="_blank">
-                            <i class="fa fa-pencil" aria-hidden="true"></i> Feedback</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/OblivionSan" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/OblivionSan" target="_blank">
-                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-                        </li>
-                        <li>
-                            <a href="./beta">
-                            <i class="fa fa-code" aria-hidden="true"></i> BETA</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-navicon" aria-hidden="true"></i> Navigation</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./commands#genral"><i class="fa fa-asterisk" aria-hidden="true"></i> Genral Commands</a></li>
-                                <li><a href="./commands#fun"><i class="fa fa-asterisk" aria-hidden="true"></i> Fun Commands</a></li>
-                                <li><a href="./commands#util"><i class="fa fa-asterisk" aria-hidden="true"></i> Utility Commands</a></li>
-                                <li><a href="./commands#sub"><i class="fa fa-asterisk" aria-hidden="true"></i> Sub Commands</a></li>
-                                <li><a href="./commands#mod"><i class="fa fa-asterisk" aria-hidden="true"></i> Moderation Commands</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A discord-bot handled and maintained by OblivionSan">
+    <meta name="keywords" content="mizore, mizore.tk, mizore chan, mizore-chan">
+    <meta name="theme-color" content="#b05dec">
+    <meta property="og:image" content="https://mizore.tk/assets/img/mizo.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://mizore.tk"/>
+    <meta property="og:title" content="Mizore.tk"/>
+    <meta property="og:description" content="A discord-bot handled and maintained by OblivionSan"/>
+    <link rel="icon" href="assets/img/mizo.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/img/mizo.png"type="image/x-icon"/>
+    <title>Commands | Mizore-Chan</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="assets/css/offcanvas.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+      <a style="font-weight: bold;" class="navbar-brand" href="./">Mizore-Chan | みぞれ</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Commands</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" target="_blank" href="https://twitter.com/OblivionSan">Twitter</a>
+              <a class="dropdown-item" target="_blank" href="https://github.com/OblivionSan">GitHub</a>
+              <hr>
+              <a class="dropdown-item" target="_blank" href="https://mizore.tk/status">Status</a>
+              <a class="dropdown-item" target="_blank" href="https://feedback.mizore.tk">Feedback</a>
+              <hr>
+              <a class="dropdown-item" target="_blank" href="https://discordbots.org/bot/339112443743698947">discordbots.org</a>
+              <a class="dropdown-item" target="_blank" href="https://bots.discord.pw/bots/339112443743698947">bots.discord.pw</a>
             </div>
-            <!-- /.container -->
-        </nav>
-        <!-- Page Content -->
-        <div class="container">
-        <div class="row maincontenthr animated fadeIn">
-            <hr id="commands">
+          </li>
+        </ul>
+        <a target="_blank" href="https://discord.oblivionsan.tk"><button class="btn btn-outline-primary my-2 my-sm-0">Support</button></a>
+        <a target="_blank" style="padding-left: 10px" href="https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=339112443743698947"><button class="btn btn-outline-primary my-2 my-sm-0">Invite</button></a>
+      </div>
+    </nav>
+    <div class="nav-scroller bg-white box-shadow">
+      <nav class="nav nav-underline">
+        <div class="nav-link">Statistics:</div>
+        <div class="nav-link">Servers:<span id="server" class="badge badge-pill bg-light align-text-bottom"></span></div>
+        <div class="nav-link">Shards:<span id="shards" class="badge badge-pill bg-light align-text-bottom"></span></div>
+        <div class="nav-link">Prefix:<span class="badge badge-pill bg-light align-text-bottom">m!</span></div>
+        <div class="nav-link">Library:<span class="badge badge-pill bg-light align-text-bottom">Discord.JS</span></div>
+        <div class="nav-link">Framework:<span class="badge badge-pill bg-light align-text-bottom">Discord-Akairo</span></div>
+      </nav>
+    </div>
+    <main role="main" class="container">
+    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
+      <img class="mr-3" src="assets/img/mail.png" alt="" width="48" height="48">
+      <div class="lh-100">
+        <h6 class="mb-0 text-white lh-100">Major updates to Mizore-Chan are in development.</h6>
+        <small>More information can be found in the <b>Notice Board</b> section.</small>
+      </div>
+    </div>
+    <!-- section 1 -->
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'General')" id="defaultOpen">General</button>
+        <button class="tablinks" onclick="openTab(event, 'Fun')">Fun</button>
+        <button class="tablinks" onclick="openTab(event, 'Utility')">Utility</button>
+        <button class="tablinks" onclick="openTab(event, 'Sub')">Sub Commands</button>
+        <button class="tablinks" onclick="openTab(event, 'Mod')">Moderation</button>
+      </div>
+      <!-- Gen Tab -->
+      <div id="General" class="tabcontent">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Usage</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>m!dev</code></td>
+              <td>Responds with the creators socials and discord server link.</td>
+              <td><code>m!dev</code></td>
+              <td><code>m!dev</code></td>
+            </tr>
+            <tr>
+              <td><code>m!embedcolor</code></td>
+              <td>Responds with color codes used in Discord.JS</td>
+              <td><code>m!embedcolor</code></td>
+              <td><code>m!embedcolor</code></td>
+            </tr>
+            <tr>
+              <td><code>m!hex</code></td>
+              <td>Responds with a random hex code.</td>
+              <td><code>m!hex</code></td>
+              <td><code>m!hex</code></td>
+            </tr>
+            <tr>
+              <td><code>m!invite</code></td>
+              <td>DM's you a invite link for the bot. </td>
+              <td><code>m!invite</code></td>
+              <td><code>m!invite</code></td>
+            </tr>
+            <tr>
+              <td><code>m!log-help</code></td>
+              <td>Responds with information about how to use logs.</td>
+              <td><code>m!log-help</code></td>
+              <td><code>m!log-help</code></td>
+            </tr>
+          </table>
         </div>
-        <!-- /.row -->
-        <div class="row animated fadeIn">
-        <div class="col-sm-12">
-        <h1 class="text-center">
-            <img src="assets/img/mizo.png" class="centered" style="border:2px solid #b05dec; width: 60px; height: 60px; border-radius: 50px;">
-            <b style="color : #b05dec">Mizore's</b>
-            Command List
-        </h1>
-        <hr class="content-titlehr">
-        <p class="text-center" class="centered">Type
-            <b>m!help</b> in Discord to view all commands from Discord.
-        </p>
-        <p class="text-center" class="centered">
-            Developed by
-            <b>
-            <a href="https://oblivionsan.tk">Oblivion サン#9469</a>
-            </b>
-        </p>
-        <br/>
-        <div class="row animated fadeIn">
-        <div class="col-sm-12">
-        <h2><a name="genral" href="#genral" style="margin-top: 5px;">Genral Commands</a></h2>
-        <hr class="content-titlehr">
-        <p class="centered">
-            <b>m!dev</b> : Responds with the creators socials and discord server link.
-            <br/>
-            <b>m!embedcolor</b> : Responds with color codes used in discord.js.
-            <br/>
-            <b>m!hex</b> : Responds with a random hex code.
-            <br/>
-            <b>m!invite</b> : DM's you a invite link for the bot.
-            <br/>
-            <b>m!log-help</b> : Responds with information about how to use logs.
-            <br/>
-        <div class="row animated fadeIn">
-        <div class="col-sm-12">
-        <h2><a name="fun" href="#fun">Fun Commands</a></h2>
-        <hr class="content-titlehr">
-        <p class="centered">
-            <b>m!8ball</b> : Ask the bot a 'yes or no' question and it'll respond with a answer.
-            <br/>
-            <b>m!coinflip</b> : Responds with either heads or tails.
-            <br/>
-            <b>m!dice</b> : Responds with a number between 1 to 6.
-            <br/>
-            <b>m!embed {input}</b> : Responds with whatever you put after the command as an embed.
-            <br/>
-            <b>m!say {input}</b> : Responds with whatever you put after the command.
-            <br/>
-            <b>m!translate {language} {input}</b> : Translation from English to choosen language.
-            <br/>
-            <b>m!roll</b> : Responds with information on how to play Higher or Lower.
-            <br/>
-            <b>m!insult</b> : Tag a user to insult them.
-            <br/>
-            <b>m!pun</b> : Responds with a random pun.
-            <br/>
-            <b>m!respect</b> : Press 🇫 to pay respects You can give a reason for the respect.
-            <br/>
-            <b>m!google</b> : Responds with a Google search of your input.
-            <br/>
-            <b>m!weather</b> : Responds with a weather statistic of your input.
-            <br/>
-            <b>m!yomama</b> : Tag a user to insult their mother.
-            <br/>
-            <b>m!cat</b> : Gets a random image of a cat.
-            <br/>
-            <b>m!neko</b> : Gets a random image of a neko.
-            <br/>
-            <b>m!nsfwneko</b> : Gets a random image of a lewd neko. (<b>NSFW</b>)
-            <br/>
-            <b>m!dog</b> : Gets a random image of a dog.
-            <br/>
-            <b>m!rabbit</b> : Gets a random image of a rabbit.
-            <br/>
-            <b>m!bird</b> : Gets a random image of a bird.
-            <br/>
-            <b>m!big {input}</b> : Responds with your input in big text.
-            <br/>
-            <b>m!spin</b> : Spin a fidget spinner.
-            <br/>
-            <b>m!anime {input}</b> : Responds with information about the anime.
-            <br/>
-            <b>m!urban {input}</b> : Search the urban dictionary. [input is optional]
-            <br/>
-            <b>m!giphy {input}</b> : Search gifs from <b>giphy.com</b>.
-            <br/>
-            <b>m!manga {input}</b> : Responds with information about the manga.
-            <br/>
-        <div class="row animated fadeIn">
-        <div class="col-sm-12">
-        <h2><a name="util" href="#util">Utility Commands</a></h2>
-        <hr class="content-titlehr">
-        <p class="centered">
-            <b>m!avatar {@user}</b> : Responds with a url linking to given user avatar.
-            <br/>
-            <b>m!channel</b> : Responds with the channel information.
-            <br/>
-            <b>m!emotes</b> : Responds with server emotes and amount.
-            <br/>
-            <b>m!icon</b> : Responds with a url linking to your server icon.
-            <br/>
-            <b>m!info {@user}</b> : Responds with given user information.
-            <br/>
-            <b>m!ping</b> : Responds with 'PONG!' also displays api lantancy.
-            <br/>
-            <b>m!roles</b> : Responds with server roles with amount.
-            <br/>
-            <b>m!server</b> : Responds with the server information.
-            <br/>
-            <b>m!stats</b> : Responds with the bots statistics.
-            <br/>
-            <b>m!lookup</b> : Get IP information for websites/IPs.
-            <br/>
-            <b>m!code {type} {code}</b> : Embed your code in codeblocks.
-            <br/>
-            <b>m!tinyurl {url}</b> : Shorten your URL with <b>TinyURL</b>.
-            <br/>
-        <div class="row animated fadeIn">
-        <div class="col-sm-12">
-        <h2><a name="sub" href="#sub">Sub Commands</a></h2>
-        <hr class="content-titlehr">
-        <p class="centered">
-            <h4>ⓘ Actions</h4>
-            <b>m!hug</b> : Hug a user or something.
-            <br/>
-            <b>m!poke</b> : Poke a user or something.
-            <br/>
-            <b>m!kiss</b> : Kiss a user or something.
-            <br/>
-            <b>m!punch</b> : Punch a user or something.
-            <br/>
-            <b>m!pat</b> : Pat a user or something.
-            <br/>
-            <h4>ⓘ Game Stats</h4>
-            <b>m!fortnite</b> : Look up Fortnite stats via [epic | psn | xbl]-username.
-            <br/>
-            <b>m!overwatch</b> : Look up overwatch stats via platform + region + username.
-            <br/>
-            <b>m!osu {osu name}</b> : Responds with a signature of osu player.
-            <br/>
-        <div class="row animated fadeIn">
-        <div class="col-sm-12">
-        <h2><a name="mod" href="#mod">Moderation Commands</a></h2>
-        <hr class="content-titlehr">
-        <p class="centered">
-            <b>m!prune {1 to 99 or all}</b> : Permissions = <b>MANAGE_MESSAGES</b>
-            <br/>
-            <b>m!user-prune {@user} {2 to 100}</b> : Permissions = <b>MANAGE_MESSAGES</b>
-            <br/>
-            <b>m!kick {@user} {reason}</b> : Permissions = <b>KICK_MEMBERS</b>
-            <br/>
-            <b>m!ban {@user} {reason}</b> : Permissions = <b>BAN_MEMBERS</b>
-            <br/>
-            <!-- Footer -->
-            <div class="row" style="margin-bottom: 3%; margin-top: 3%;">
-            </div>
-            <!-- /.row -->
-            <hr>
-            <div class="row text-right" style="margin-bottom: 4%">
-                <p> ©
-                    <a href="https://oblivionsan.tk/">OblivionSan</a>
-                </p>
-            </div>
+      </div>
+      <!-- Fun Tab -->
+      <div id="Fun" class="tabcontent">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Usage</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>m!8ball</code></td>
+              <td>Ask the bot a 'yes or no' question and it'll respond with a answer. </td>
+              <td><code>m!8ball {question}</code></td>
+              <td><code>m!8ball</code> Are you alive?</td>
+            </tr>
+            <tr>
+              <td><code>m!coinflip</code></td>
+              <td>Responds with either heads or tails.</td>
+              <td><code>m!coinflip</code></td>
+              <td><code>m!coinflip</code></td>
+            </tr>
+            <tr>
+              <td><code>m!dice</code></td>
+              <td>Responds with a number between 1 to 6.</td>
+              <td><code>m!dice</code></td>
+              <td><code>m!dice</code></td>
+            </tr>
+            <tr>
+              <td><code>m!embed</code></td>
+              <td>DM's you a invite link for the bot. </td>
+              <td><code>m!embed {input}</code> </td>
+              <td><code>m!embed</code> Hello!</td>
+            </tr>
+            <tr>
+              <td><code>m!say</code></td>
+              <td>Responds with information about how to use logs.</td>
+              <td><code>m!say {input}</code> </td>
+              <td><code>m!say</code> Hello!</td>
+            </tr>
+            <tr>
+              <td><code>m!translate</code></td>
+              <td>Translation from English to choosen language.</td>
+              <td><code>m!translate {language} {input}</code> </td>
+              <td><code>m!translate</code> ja Hello!</td>
+            </tr>
+            <tr>
+              <td><code>m!roll</code></td>
+              <td>Responds with information on how to play Higher or Lower.</td>
+              <td><code>m!roll</code></td>
+              <td><code>m!roll</code></td>
+            </tr>
+            <tr>
+              <td><code>m!insult</code></td>
+              <td>Tag a user to insult them.</td>
+              <td><code>m!insult {@user}</code></td>
+              <td><code>m!insult</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!pun</code></td>
+              <td>Responds with a random pun.</td>
+              <td><code>m!pun</code></td>
+              <td><code>m!pun</code></td>
+            </tr>
+            <tr>
+              <td><code>m!respect</code></td>
+              <td>Press 🇫 to pay respects, You can give a user or a reason for the respect.</td>
+              <td><code>m!respect {@user} | {something}</code></td>
+              <td><code>m!respect</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!google</code></td>
+              <td>Responds with a Google search of your input.</td>
+              <td><code>m!google {input}</code></td>
+              <td><code>m!google</code> mizore-chan</td>
+            </tr>
+            <tr>
+              <td><code>m!weather</code></td>
+              <td>Responds with a weather statistic of your input.</td>
+              <td><code>m!weather {location}</code></td>
+              <td><code>m!weather</code> Tokyo JP</td>
+            </tr>
+            <tr>
+              <td><code>m!yomama</code></td>
+              <td>Tag a user to insult their mother.</td>
+              <td><code>m!yomama {@user}</code></td>
+              <td><code>m!yomama</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!cat</code></td>
+              <td>Gets a random image of a cat. [<b>UNAVAILABLE</b>]</td>
+              <td><code>m!cat</code></td>
+              <td><code>m!cat</code></td>
+            </tr>
+            <tr>
+              <td><code>m!neko</code></td>
+              <td>Gets a random image of a neko</td>
+              <td><code>m!neko</code></td>
+              <td><code>m!neko</code></td>
+            </tr>
+            <tr>
+              <td><code>m!nsfwneko</code></td>
+              <td>Gets a random image of a lewd neko. (<b>NSFW</b>) </td>
+              <td><code>m!nsfwneko</code></td>
+              <td><code>m!nsfwneko</code></td>
+            </tr>
+            <tr>
+              <td><code>m!dog</code></td>
+              <td>Gets a random image of a dog.</td>
+              <td><code>m!dog</code></td>
+              <td><code>m!dog</code></td>
+            </tr>
+            <tr>
+              <td><code>m!rabbit</code></td>
+              <td>Gets a random image of a rabbit.</td>
+              <td><code>m!rabbit</code></td>
+              <td><code>m!rabbit</code></td>
+            </tr>
+            <tr>
+              <td><code>m!bird</code></td>
+              <td>Gets a random image of a bird.</td>
+              <td><code>m!bird</code></td>
+              <td><code>m!bird</code></td>
+            </tr>
+            <tr>
+              <td><code>m!big</code></td>
+              <td>Responds with your input in big text.</td>
+              <td><code>m!big {input}</code></td>
+              <td><code>m!big</code> Hello</td>
+            </tr>
+            <tr>
+              <td><code>m!spin</code></td>
+              <td>Spin a fidget spinner.</td>
+              <td><code>m!spin</code></td>
+              <td><code>m!spin</code></td>
+            </tr>
+            <tr>
+              <td><code>m!anime</code></td>
+              <td>Responds with information about the anime.</td>
+              <td><code>m!anime {input}</code></td>
+              <td><code>m!anime</code> Rosario Vampire</td>
+            </tr>
+            <tr>
+              <td><code>m!manga</code></td>
+              <td>Responds with information about the manga.</td>
+              <td><code>m!manga</code></td>
+              <td><code>m!manga</code> Rosario Vampire</td>
+            </tr>
+            <tr>
+              <td><code>m!urban</code></td>
+              <td>Search the urban dictionary. (<b>input is optional</b>)</td>
+              <td><code>m!urban {input}</code></td>
+              <td><code>m!urban</code> weeb</td>
+            </tr>
+            <tr>
+              <td><code>m!giphy</code></td>
+              <td>Search gifs from <b>giphy.com</b>. [<b>UNAVAILABLE</b>]</td>
+              <td><code>m!giphy {input}</code></td>
+              <td><code>m!giphy</code> mizore-chan</td>
+            </tr>
+          </table>
         </div>
-        <!-- jQuery Version v1.12.4 -->
-        <script src="assets/js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+      </div>
+      <!-- Util Tab -->
+      <div id="Utility" class="tabcontent">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Usage</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>m!avatar</code></td>
+              <td>Responds with a url linking to given user avatar.</td>
+              <td><code>m!avatar {@user}</code></td>
+              <td><code>m!avatar</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!channel</code></td>
+              <td>Responds with the channel information.</td>
+              <td><code>m!channel</code></td>
+              <td><code>m!channel</code></td>
+            </tr>
+            <tr>
+              <td><code>m!emotes</code></td>
+              <td>Responds with server emotes and amount.</td>
+              <td><code>m!emotes</code></td>
+              <td><code>m!emotes</code></td>
+            </tr>
+            <tr>
+              <td><code>m!icon</code></td>
+              <td>Responds with a url linking to your server icon.</td>
+              <td><code>m!icon</code></td>
+              <td><code>m!icon</code></td>
+            </tr>
+            <tr>
+              <td><code>m!info</code></td>
+              <td>Responds with given user information.</td>
+              <td><code>m!info {@user}</code></td>
+              <td><code>m!command</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!ping</code></td>
+              <td>Responds with 'PONG!' also displays api lantancy.</td>
+              <td><code>m!ping</code></td>
+              <td><code>m!ping</code></td>
+            </tr>
+            <tr>
+              <td><code>m!roles</code></td>
+              <td>Responds with server roles with amount.</td>
+              <td><code>m!roles</code></td>
+              <td><code>m!roles</code></td>
+            </tr>
+            <tr>
+              <td><code>m!server</code></td>
+              <td>Responds with the server information.</td>
+              <td><code>m!server</code></td>
+              <td><code>m!server</code></td>
+            </tr>
+            <tr>
+              <td><code>m!stats</code></td>
+              <td>Responds with the bots statistics.</td>
+              <td><code>m!stats</code></td>
+              <td><code>m!stats</code></td>
+            </tr>
+            <tr>
+              <td><code>m!lookup</code></td>
+              <td>Get IP information for websites/IPs.</td>
+              <td><code>m!lookup {input}</code></td>
+              <td><code>m!lookup</code> mizore.tk / 1.2.3.4</td>
+            </tr>
+            <tr>
+              <td><code>m!code</code></td>
+              <td>Embed your code in codeblocks.</td>
+              <td><code>m!code {type} {input}</code></td>
+              <td><code>m!code</code> JS const Discord = require('discord.js')</td>
+            </tr>
+            <tr>
+              <td><code>m!tinyurl</code></td>
+              <td>Shorten your URL with TinyURL.<br>(Must contain <b>HTTPS or HTTP</b>)</td>
+              <td><code>m!tinyurl {input}</code></td>
+              <td><code>m!tinyurl</code> https://google.com</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- Sub Tab -->
+      <div id="Sub" class="tabcontent">
+        <br>
+        <h2 style="color: var(--secondary)">Actions</h2>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Usage</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>m!hug</code></td>
+              <td>Hug a user or something</td>
+              <td><code>m!hug {@user} | {input}</code></td>
+              <td><code>m!hug</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!poke</code></td>
+              <td>Poke a user or something.</td>
+              <td><code>m!poke {@user} | {input}</code></td>
+              <td><code>m!poke</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!kiss</code></td>
+              <td>Kiss a user or something.</td>
+              <td><code>m!kiss {@user} | {input}</code></td>
+              <td><code>m!kiss</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!punch</code></td>
+              <td>Punch a user or something.</td>
+              <td><code>m!punch {@user} | {input}</code></td>
+              <td><code>m!punch</code> @someone</td>
+            </tr>
+            <tr>
+              <td><code>m!pat</code></td>
+              <td>Pat a user or something.</td>
+              <td><code>m!pat {@user} | {input}</code></td>
+              <td><code>m!pat</code> @someone</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <h2 style="color: var(--secondary)">Game Stats</h2>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Usage</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>m!fortnite</code></td>
+              <td>Look up Fortnite stats via [epic | psn | xbl]-username.</td>
+              <td><code>m!fortnite {platform} {input}</code></td>
+              <td><code>m!fortnite</code> pc Ninja</td>
+            </tr>
+            <tr>
+              <td><code>m!osu</code></td>
+              <td>Responds with a signature img of the player.</td>
+              <td><code>m!osu {input}</code></td>
+              <td><code>m!osu</code> OblivionSan</td>
+            </tr>
+            <tr>
+              <td><code>m!overwatch</code></td>
+              <td>Look up overwatch stats via platform + region + username. [<b>API ISSUES</b>]</td>
+              <td><code>m!overwatch {platform} {region} {input} </code></td>
+              <td><code>m!overwatch</code> pc eu PogChamp#21219</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- Mod Tab -->
+      <div id="Mod" class="tabcontent">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Usage</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>m!prune</code></td>
+              <td>Permissions = <b>MANAGE_MESSAGES</b></td>
+              <td><code>m!prune {amount}</code></td>
+              <td><code>m!prune</code> 1 to 99 / all</td>
+            </tr>
+            <tr>
+              <td><code>m!user-prune</code></td>
+              <td>Permissions = <b>MANAGE_MESSAGES</b></td>
+              <td><code>m!user-prune {@user} {amount}</code></td>
+              <td><code>m!user-prune</code> @someone 2 / 100</td>
+            </tr>
+            <tr>
+              <td><code>m!kick</code></td>
+              <td>Permissions = <b>KICK_MEMBERS</b></td>
+              <td><code>m!kick {@user} {reason}</code></td>
+              <td><code>m!kick</code> @someone reason</td>
+            </tr>
+            <tr>
+              <td><code>m!ban</code></td>
+              <td>Permissions = <b>BAN_MEMBERS</b></td>
+              <td><code>m!ban {@user} {reason}</code></td>
+              <td><code>m!ban</code> @someone reason</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Bootstrap, jQuery, JS -->
+    <script>
+      function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+    <script src="assets/js/main.js" ></script>
+    <script src="assets/js/jquery.min.js" ></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.min.js"></script>
+    <script src="assets/js/offcanvas.min.js"></script>
+  </body>
 </html>

@@ -1,134 +1,140 @@
-<!DOCTYPE html>
-<html style="cursor: url(assets/img/cursor.png), auto"; lang="en">
-    <head>
-        <!-- SANTA IS REAL!!! (┛◉Д◉)┛彡┻━┻  -->
-        <script type="text/javascript" src="assets/js/snowstorm.assets/js"></script>
-        <!-- SANTA IS REAL!!! (┛◉Д◉)┛彡┻━┻  -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="A discord-bot handled and maintained by OblivionSan">
-        <meta name="keywords" content="mizore, mizore.tk, mizore chan, mizore-chan">
-        <meta name="theme-color" content="#b05dec">
-        <meta property="og:image" content="https://mizore.tk/assets/img/mizo.png"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://mizore.tk"/>
-        <meta property="og:title" content="Mizore.tk"/>
-        <meta property="og:description" content="A discord-bot handled and maintained by OblivionSan"/>
-        <link rel="icon" href="assets/img/mizo.png"
-            type="image/x-icon" />
-        <link rel="shortcut icon" href="assets/img/mizo.png"
-            type="image/x-icon" />
-        <title>Mizore-Chan | Home</title>
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/css.css">
-    </head>
-    <body id="top">
-        <nav class="navbar navbar-inverse navbar-static-top animated fadeInDown" role="navigation">
-            <div class="container" style="margin-top: 5px;">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./"><b>Mizore-Chan | みぞれ</b></a>
-                    <a href="https://discord.oblivionsan.tk/" class="btn btn-default btn-invite" target="_blank" style="margin: 8px; float: right;">
-                    <b style="color: #4c4c4c;">Support Server</b>
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="float: right;">
-                    <ul class="nav navbar-nav" style="font-size: 14px;">
-                        <li>
-                            <a href="./commands">
-                            <i class="fa fa-book" aria-hidden="true"></i> Commands</a>
-                        </li>
-                        <li>
-                            <a href="./about">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
-                        </li>
-                        <li>
-                            <a href="./status">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i> Status</a>
-                        </li>
-                        <li>
-                            <a href="https://feedback.mizore.tk" target="_blank">
-                            <i class="fa fa-pencil" aria-hidden="true"></i> Feedback</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/OblivionSan" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/OblivionSan" target="_blank">
-                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-                        </li>
-                        <li>
-                            <a href="./beta">
-                            <i class="fa fa-code" aria-hidden="true"></i> BETA</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-navicon" aria-hidden="true"></i> Navigation</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./commands#genral"><i class="fa fa-asterisk" aria-hidden="true"></i> Genral Commands</a></li>
-                                <li><a href="./commands#fun"><i class="fa fa-asterisk" aria-hidden="true"></i> Fun Commands</a></li>
-                                <li><a href="./commands#util"><i class="fa fa-asterisk" aria-hidden="true"></i> Utility Commands</a></li>
-                                <li><a href="./commands#sub"><i class="fa fa-asterisk" aria-hidden="true"></i> Sub Commands</a></li>
-                                <li><a href="./commands#mod"><i class="fa fa-asterisk" aria-hidden="true"></i> Moderation Commands</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A discord-bot handled and maintained by OblivionSan">
+    <meta name="keywords" content="mizore, mizore.tk, mizore chan, mizore-chan">
+    <meta name="theme-color" content="#b05dec">
+    <meta property="og:image" content="https://mizore.tk/assets/img/mizo.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://mizore.tk"/>
+    <meta property="og:title" content="Mizore.tk"/>
+    <meta property="og:description" content="A discord-bot handled and maintained by OblivionSan"/>
+    <link rel="icon" href="assets/img/mizo.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/img/mizo.png"type="image/x-icon"/>
+    <title>Home | Mizore-Chan</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="assets/css/offcanvas.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+      <a style="font-weight: bold;" class="navbar-brand" href="./">Mizore-Chan | みぞれ</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="commands">Commands</a>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" target="_blank" href="https://twitter.com/OblivionSan">Twitter</a>
+              <a class="dropdown-item" target="_blank" href="https://github.com/OblivionSan">GitHub</a>
+              <hr>
+              <a class="dropdown-item" target="_blank" href="https://mizore.tk/status">Status</a>
+              <a class="dropdown-item" target="_blank" href="https://feedback.mizore.tk">Feedback</a>
+              <hr>
+              <a class="dropdown-item" target="_blank" href="https://discordbots.org/bot/339112443743698947">discordbots.org</a>
+              <a class="dropdown-item" target="_blank" href="https://bots.discord.pw/bots/339112443743698947">bots.discord.pw</a>
             </div>
-            <!-- /.container -->
-        </nav>
-        <div class="container">
-            <div class="row" style="margin-top: 3%;">
-                <hr>
-            </div>
-            <div class="row">
-                <div class="col-md-5 col-sm-12 text-center animated fadeInLeft" style="margin-top: 5%; margin-bottom: auto; display:block;">
-                    <div class="row">
-                        <img src="assets/img/mizo.png" style="border:4px solid #b05dec; background-position: center; box-shadow: 0 0 8px rgba(176,93,236, .8); -webkit-box-shadow: 0 0 8px rgba(176,93,236, .8); -moz-box-shadow: 0 0 8px rgba(176,93,236, .8); width: 256px; height: 256px; border-radius: 256px; -webkit-border-radius: 256px; -moz-border-radius: 256px;">
-                        <div class="center-block text-center">
-                            <h1 style="color : #b05dec; font-weight: bold">Mizore-Chan</h1>
-                            <p>A multipurpose discord bot with useful and fun commands.</p>
-                            <p><img src="https://discordbots.org/api/widget/servers/339112443743698947.svg?noavatar=true&leftcolor=ffffff&rightcolor=ffffff&lefttextcolor=b05dec&righttextcolor=b05dec" alt="Discord Bots" /></p>
-                            <br>
-                            <a class="btn btn-default btn-invite" href="https://twitter.com/OblivionSan" target="_blank"><b style="color: #4c4c4c;"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</b></a> 
-                            <a class="btn btn-default btn-invite" href="https://github.com/OblivionSan"><b style="color: #4c4c4c;"><i class="fa fa-github" aria-hidden="true"></i> GitHub</b></a>
-                            <a class="btn btn-default btn-invite" href="https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=339112443743698947"><b style="color: #4c4c4c;"><i class="fa fa-envelope" aria-hidden="true"></i> Invite</b></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7 hidden-sm hidden-xs">
-                    <iframe src="https://discordapp.com/widget?id=303565885036167179&theme=light" width="100%" height="510px" allowtransparency="true" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 3%; margin-top: 3%;">
-            </div>
-            <!-- /.row -->
-            <hr>
-            <div class="row text-right" style="margin-bottom: 4%">
-                <p> ©
-                    <a href="https://oblivionsan.tk/">OblivionSan</a>
-                </p>
-            </div>
+          </li>
+        </ul>
+          <a target="_blank" href="https://discord.oblivionsan.tk"><button class="btn btn-outline-primary my-2 my-sm-0">Support</button></a>
+          <a target="_blank" style="padding-left: 10px" href="https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=339112443743698947"><button class="btn btn-outline-primary my-2 my-sm-0">Invite</button></a>
+      </div>
+    </nav>
+    <div class="nav-scroller bg-white box-shadow">
+      <nav class="nav nav-underline">
+        <div class="nav-link">Statistics:</div>
+        <div class="nav-link">Servers<span id="server" class="badge badge-pill bg-light align-text-bottom"></span></div>
+        <div class="nav-link">Shards<span id="shards" class="badge badge-pill bg-light align-text-bottom"></span></div>
+        <div class="nav-link">Prefix:<span class="badge badge-pill bg-light align-text-bottom">m!</span></div>
+        <div class="nav-link">Library<span class="badge badge-pill bg-light align-text-bottom">Discord.JS</span></div>
+        <div class="nav-link">Framework<span class="badge badge-pill bg-light align-text-bottom">Discord-Akairo</span></div>
+      </nav>
+    </div>
+    <main role="main" class="container">
+      <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
+        <img class="mr-3" src="assets/img/mail.png" alt="" width="48" height="48">
+        <div class="lh-100">
+          <h6 class="mb-0 text-white lh-100">Major updates to Mizore-Chan are in development.</h6>
+          <small>More information can be found in the <b>Notice Board</b> section.</small>
         </div>
-        <script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover(); 
-        });
-        </script>
-        <!-- jQuery Version v1.12.4 -->
-        <script src="assets/js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+      </div>
+      <!-- section 1 -->
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Notice Board</h6>
+        <div class="media text-muted pt-3">
+          <img class="pimg" src="assets/img/mail_2.png">
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <strong class="d-block text-gray-dark">New Website!</strong>
+            A new website design (<code>frontend</code>) has been released and is fully operational.
+          </p>
+        </div>
+        <div class="media text-muted pt-3">
+          <img class="pimg" src="assets/img/mail_2.png">
+          <p class="media-body pb-3 mb-0 small lh-125 border-gray">
+            <strong class="d-block text-gray-dark">Major re-writes to Mizore-Chan</strong>
+            Mizore-Chan is undergoing some major rewrites to fix bugs, clean up code and to make sure everything is up-to-date via APIs.
+          </p>
+        </div>
+      </div>
+      <!-- section 2 -->
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">GitHub - Organizations</h6>
+        <div class="media text-muted pt-3">
+          <img class="pimg" src="assets/img/pfp/mizo.jpg">
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <strong class="text-gray-dark">Mizore-Chan | みぞれ</strong>
+              <a href="https://github.com/MizoreChan">Follow</a>
+            </div>
+            <span class="d-block">A discord-bot handled and maintained by @OblivionSan</span>
+          </div>
+        </div>
+        <div class="media text-muted pt-3">
+          <img class="pimg" src="assets/img/pfp/wi.jpg">
+          <div class="media-body pb-3 mb-0 small lh-125 border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <strong class="text-gray-dark">Weeb Index</strong>
+              <a href="https://github.com/WeebIndex">Follow</a>
+            </div>
+            <span class="d-block">A home for weeb based projects.</span>
+          </div>
+        </div>
+      </div>
+      <!-- section 3 -->
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Discord Server</h6>
+        <div class="media text-muted pt-3">
+          <iframe src="https://discordapp.com/widget?id=303565885036167179&theme=light" width="100%" height="400" allowtransparency="true" frameborder="0"></iframe>
+        </div>
+        <small class="d-block text-right mt-3">
+        <span style="text-align: center" class="d-block text-muted">Website Developed by <a style="font-weight: bold" href="https://oblivionsan.tk">Oblivion さん</a></span>
+        </small>
+      </div>
+    </main>
+    <br>
+  </div>
+    <!-- Bootstrap, jQuery, JS -->
+    <script src="assets/js/main.js" ></script>
+    <script src="assets/js/jquery.min.js" ></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.min.js"></script>
+    <script src="assets/js/offcanvas.min.js"></script>
+  </body>
 </html>
